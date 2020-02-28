@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Операторы цикла</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<script>
+        
+        document.write("<h1> <i>Таблица умножения с помощью цикла for</i>  </h1> ");
+        document.write("<table style='text-align: center;' border='2'> ");
+        for (i = 1; i < 10; i++) {
+            document.write("<tr>");
+            document.write("<td>" + i + "</td>");
+            for (j = 1; j < 10; j++) {
+                document.write("<td>"+ i*j + "</td");
+                document.write("</tr>");
+            }
+            
+        }
+        
+        document.write("</table> ");
+        
+        document.write("<br />");
+        var k = 1;
+        var n = 1;
+    document.write("<h1> <i>Таблица умножения с помощью цикла do-while</i>  </h1> ");
+    document.write("<table style='text-align: center;' border='2'> ");
+            do {
+            // тело цикла
+                    document.write("<tr>");//первый цикл создает только 10 строк
+                                do {
+                                    // тело цикла
+                                    document.write("<td>"+k*n+"</td>"); //второй цикл создает 10 столбцов и заполнет их
+                                    n++;    
+                                   } while (n <=10);
+                               
+       
+                    document.write("</tr>");   
+                    k++; // увеличит i=1 на единицу
+                    n=1; // сбросит значение n=9 на n=1
+              } while (k <= 10);
+    document.write("</table> ");
+    document.write("<br />");
+        
+        
+		
+        
+        
+        
+		
+	</script>
+</body>
+</html>
