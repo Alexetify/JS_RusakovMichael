@@ -25,6 +25,30 @@
 			summa += arr[i];
 		}
 		document.write("<br />Среднее арифметическое элементов массива равно " + (summa / arr.length));
+        
+        document.write("<br /");
+        var array = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        for (var b = 0; b < array.length; b++) {
+            
+            document.write(array[b] + ' ');
+        }
+        
+        document.write("<br /");
+        var arra = new Array(11, 12, 13, 14, 15, 16, 17, 18, 19, 20);
+        
+        [arra[0], arra[9]] = [arra[9], arra[0]];
+        [arra[1], arra[8]] = [arra[8], arra[1]];
+        [arra[2], arra[7]] = [arra[7], arra[2]];
+        [arra[3], arra[6]] = [arra[6], arra[3]];
+        [arra[4], arra[5]] = [arra[5], arra[4]];
+        
+        for (var c = 0; c < arra.length; c++) {
+            
+            document.write(arra[c] + ' ');
+        }
+        
+        
+        
 		
 	</script>
 </body>
