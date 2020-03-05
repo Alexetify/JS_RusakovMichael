@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Многомерные массивы</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+	<script type="text/javascript">
+		var arr_1 = new Array();
+		var arr_2 = new Array();
+		var arr_3 = new Array();
+		for (var i = 0; i < 5; i++) arr_1[i] = i;
+		for (var i = 0; i < 10; i++) arr_2[i] = i * 2;
+		for (var i = 0; i < 15; i++) arr_3[i] = i * 3;
+		var arr = new Array(arr_1, arr_2, arr_3);
+		for (var i = 0; i < arr.length; i++) {
+			for (var j = 0; j < arr[i].length; j++)
+				document.write(arr[i][j] + " ");
+			document.write("<br />");
+		}
+        document.write("<h1> <i>Двумерный массив 3х3 : </i>  </h1> ");
+        
+        
+        var arra = new Array();
+        var array = new Array();
+        var arry = new Array();
+        for (var a = 0; a < 3; a++) arra[a] = a;
+        for (var a = 0; a < 3; a++) array[a] = a;
+        for (var a = 0; a < 3; a++) arry[a] = a;
+        document.write("<table style='text-align: center;' border='2'> ");
+        var ar = new Array(arra, array, arry);
+        for (var a = 0; a < ar.length; a++){
+            document.write("<tr>");
+            for (var b = 0; b < ar[a].length; b++)
+            document.write("<td>"+ ar[a][b] + "</td");
+                document.write("</tr>");
+        }
+        
+        document.write("</table> ");
+        document.write("<br />");
+        document.write("<h1> <i>Замена диагональных чисел на 1, а остальные на НУЛЬ. </i>  </h1> ");
+        
+        ar[0][0] = 1;
+        ar[0][1] = 0;
+        ar[0][2] = 0;
+        ar[1][1] = 1;
+        ar[1][0] = 0;
+        ar[1][2] = 0;
+        ar[2][2] = 1;
+        ar[2][0] = 0;
+        ar[2][1] = 0;
+        document.write("<table style='text-align: center;' border='2'> ");
+        for (var a = 0; a < ar.length; a++){
+            document.write("<tr>");
+            for (var b = 0; b < ar[a].length; b++)
+            document.write("<td>"+ ar[a][b] + "</td");
+                document.write("</tr>");
+        }
+        
+        document.write("</table> ");
+        document.write("<tr>");
+        document.write("<h1> <i>Замена диагональных чисел на 1, а остальные на 0 в  массиве 3х3 с помощью циклов: </i>  </h1> ");
+        
+        
+        var ar_ra = new Array();
+        var ar_ray = new Array();
+        var ar_ry = new Array();
+        for (var a = 0; a < 3; a++) ar_ra[0] = 1; ar_ra[1] = 0; ar_ra[2] = 0;
+        for (var a = 0; a < 3; a++) ar_ray[1] = 1; ar_ray[0] = 0; ar_ray[2] = 0;
+        for (var a = 0; a < 3; a++) ar_ry[2] = 1; ar_ry[0] = 0; ar_ry[1] = 0;
+        document.write("<table style='text-align: center;' border='2'> ");
+        var a_r = new Array(ar_ra, ar_ray, ar_ry);
+        for (var a = 0; a < a_r.length; a++){
+            document.write("<tr>");
+            for (var b = 0; b < a_r[a].length; b++)
+            document.write("<td>"+ a_r[a][b] + "</td");
+                document.write("</tr>");
+        }
+        
+        document.write("</table> ");
+        
+	</script>
+</body>
+</html>
